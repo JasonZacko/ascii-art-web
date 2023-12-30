@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Title}}</title>
+</head>
+<body>
+    <h1>{{.Title}}</h1>
+    <form action="/ascii-art" method="post">
+        <label for="text">Texte:</label>
+        <input type="text" name="text" required>
+        <br>
+        <label>Bannière:</label>
+        <input type="radio" name="banner" value="shadow"> Shadow
+        <input type="radio" name="banner" value="standard"> Standard
+        <input type="radio" name="banner" value="thinkertoy"> Thinkertoy
+        <br>
+        <button type="submit">Générer ASCII Art</button>
+    </form>
+    <pre>{{.ASCIIArt}}</pre>
+</body>
+</html>
