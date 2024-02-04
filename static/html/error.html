@@ -1,0 +1,18 @@
+<!-- error.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+</head>
+<body>
+    <!-- Affichage du code d'erreur HTTP généré dynamiquement côté serveur -->
+    <h1>{{.errorInt}}</h1>
+
+    <!-- Affichage du message d'erreur correspondant au code d'erreur HTTP généré dynamiquement côté serveur -->
+    <h2>{{.errorMsg}}</h2>
+
+    <!-- Explication : Cette page est conçue pour afficher des informations relatives aux erreurs HTTP générées côté serveur. -->
+</body>
+</html>

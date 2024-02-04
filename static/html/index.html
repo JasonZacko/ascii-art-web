@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii Art Converter</title>
+</head>
+<body>
+    <!-- Titre principal de la page -->
+    <h1>Ascii Art Converter</h1>
+
+    <!-- Formulaire pour la conversion -->
+    <form action="/" method="post">
+        <!-- Champ de texte pour saisir l'entrée -->
+        <label for="inputText">Enter text:</label>
+        <textarea id="inputText" name="inputText" rows="4" cols="50"></textarea>
+
+        <br>
+
+        <!-- Sélection du style de police pour la conversion -->
+        <label>Choose font:</label>
+        <select id="fontSelect" name="fontSelect">
+            <option value="shadow">Shadow</option>
+            <option value="standard">Standard</option>
+            <option value="thinkertoy">Thinkertoy</option>
+            <option value="test404">test404</option>
+        </select>
+
+        <br>
+
+        <!-- Bouton de soumission du formulaire -->
+        <button type="submit">Convert</button>
+    </form>
+
+    <!-- Titre pour la section d'Ascii Art converti -->
+    <h2>Converted Ascii Art:</h2>
+    <!-- Utiliser {{.ConvertedText}} pour afficher le texte converti -->
+    <pre>{{.ConvertedText}}</pre>
+</body>
+</html>
